@@ -8,7 +8,7 @@ const Header = () => {
                     </svg>
                 </div>
                 <h1 className="text-3xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-white via-indigo-200 to-indigo-400 tracking-tight">
-                    CodeXplainer
+                    codeXplain
                 </h1>
             </div>
         </header>
