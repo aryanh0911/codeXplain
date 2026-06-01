@@ -3,7 +3,7 @@ import { explain } from "../../actions";
 import CodeExplanation from "../CodeExplanation";
 import Error from "../Error";
 
-const CodeSplainForm = () => {
+const CodeXplainForm = () => {
     const [result, submitAction, isPending] = useActionState(explain, null)
     const [code, setCode] = useState("");
 
@@ -21,7 +21,10 @@ const CodeSplainForm = () => {
                     <div className="space-y-2">
                         <label className="text-sm font-medium text-gray-300 ml-1"> Programming Language </label>
                         <div className="relative">
-                            <select name="language" className="w-full appearance-none bg-black/20 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500/50 transition-all cursor-pointer">
+                            <select 
+                                name="language" 
+                                className="w-full appearance-none bg-black/20 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500/50 transition-all cursor-pointer"
+                            >
                                 <option value="javascript" className="bg-gray-900">JavaScript</option>
                                 <option value="python" className="bg-gray-900">Python</option>
                                 <option value="c++" className="bg-gray-900">C++</option>
@@ -89,4 +92,4 @@ const CodeSplainForm = () => {
     )
 }
 
-export default CodeSplainForm;
+export default CodeXplainForm;

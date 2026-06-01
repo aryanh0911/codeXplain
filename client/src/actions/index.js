@@ -3,7 +3,6 @@
 import axios from 'axios'
 
 export async function explain (prevState, formData){
-    
     const code = formData.get("code");
     const language = formData.get("language");
 
@@ -13,16 +12,14 @@ export async function explain (prevState, formData){
             language
         })
         
-        const data = res.data;
-        
         return {
             success: true,
-            data
+            data: res.data
         }
     } catch (error) {
         return {
             success: false,
-            error: `An error occured: ${error?.message}`,
+            error: `An error occured: ${error?.message}`
         }
     }
 }

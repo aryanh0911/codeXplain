@@ -1,5 +1,5 @@
 import Header from "./Header"
-import CodeSplainForm from "./forms/CodeSplainForm"
+import CodeXplainForm from "./forms/CodeXplainForm"
 
 const CodeEntry = () => {
     return (
@@ -8,7 +8,7 @@ const CodeEntry = () => {
             <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-purple-600/10 rounded-full blur-3xl -z-10 mix-blend-screen"></div>
             
             <Header />
-            <CodeSplainForm />
+            <CodeXplainForm />
         </div>
     )
 }
